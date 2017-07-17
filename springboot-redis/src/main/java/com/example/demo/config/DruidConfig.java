@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 
 import com.alibaba.druid.pool.DruidDataSource;
 /**
- * <p>Description: 数据源属性配置</p>
+ * <p>Description: Druid数据源属性配置</p>
  * @author zcong
  *
  */

@@ -2,7 +2,7 @@
 
 #功能（一）：配置监控统计功能{DruidMonitorConfig.java}，下方有解释
 #功能（二）：springboot+mybatis控制台打印sql语句，下方有解释
-
+#功能（三）：springboot+redis缓存（ReadisConfiguration.java）
 
 
 Druid是阿里巴巴开源平台上的一个项目,整个项目由数据库连接池、插件框架和SQL解析器组成。
@@ -37,3 +37,7 @@ Druid开源中国社区地址：http://www.oschina.NET/p/druid
 		
 #功能（二）：springboot+mybatis控制台打印sql语句	{还需完善}
 此demo采用mybatis的是log4j日志，且为debug模式才能打印出sql,	
+将log4j配置文件中info改为debug可以输出sql，仍需优化
+#功能（三）：springboot+redis缓存
+当出现下面情况：有可能原因①redis未打开或端口号不正确
+"Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool",

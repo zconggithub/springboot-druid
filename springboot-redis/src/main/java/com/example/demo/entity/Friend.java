@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
@@ -15,7 +17,7 @@ import lombok.Data;
  *
  */
 @Data
-public class Friend {
+public class Friend implements Serializable{
 	
     private Integer fid;
     
