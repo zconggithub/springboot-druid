@@ -25,6 +25,12 @@ import org.springframework.data.redis.core.RedisTemplate;
 @EnableCaching//注解来开启我们的项目支持缓存，我们在配置类内添加了方
 public class ReadisConfiguration extends CachingConfigurerSupport{
 
+		/**
+	 * 自定义生成key的规则
+	    * @param keyGenSpi
+	    * @param provider
+	    * @param algorithm
+	 */
 	@Override
 	public KeyGenerator keyGenerator() {
 		        return new KeyGenerator(){
@@ -50,12 +56,7 @@ public class ReadisConfiguration extends CachingConfigurerSupport{
 		    
 	}
 
-	/**
-	 * 自定义生成key的规则
-	    * @param keyGenSpi
-	    * @param provider
-	    * @param algorithm
-	 */
+
 
 	
 	/**
